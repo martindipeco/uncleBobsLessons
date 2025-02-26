@@ -1,3 +1,5 @@
+import auxiliar.*;
+
 public class FunctionsHTMLUtilsOriginal {
     public static String testableHtml(PageData pageData, boolean includeSuiteSetup) throws Exception {
         WikiPage wikiPage = pageData.getWikiPage();
