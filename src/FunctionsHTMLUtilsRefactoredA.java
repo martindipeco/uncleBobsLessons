@@ -1,3 +1,7 @@
+//Taken from "Clean Code" by Robert C. Martin
+//Listing 3-2
+//HtmlUtil.java (refactored)
+
 import auxiliar.PageData;
 import auxiliar.WikiPage;
 
@@ -17,6 +21,7 @@ public class FunctionsHTMLUtilsRefactoredA {
         return pageData.getHtml();
     }
 
+    //not included in the book. Just added to compile
     private static void includeTeardownPages(WikiPage testPage, StringBuffer newPageContent, boolean isSuite) {
     }
 

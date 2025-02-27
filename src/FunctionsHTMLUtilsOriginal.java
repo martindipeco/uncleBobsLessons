@@ -1,3 +1,7 @@
+//Taken from "Clean Code" by Robert C. Martin
+//Listing 3-1
+//HtmlUtil.java (FitNesse 20070619)
+
 import auxiliar.*;
 
 public class FunctionsHTMLUtilsOriginal {
