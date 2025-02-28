@@ -1,5 +1,7 @@
-public class NamesContextClear {
-    //please refer to NamesContextUnclear to see original method
+package names;
+
+public class ContextClear {
+    //please refer to names.ContextUnclear to see original method
 
     //first correction: split function into smaller pieces
 

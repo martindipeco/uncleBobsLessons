@@ -1,4 +1,4 @@
-package auxiliar;
+package functions.auxiliar;
 
 public class PageCrawlerImpl {
     public static WikiPage getInheritedPage (SuiteResponder suiteResponder, WikiPage wikiPage) {

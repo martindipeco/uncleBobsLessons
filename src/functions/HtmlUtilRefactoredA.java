@@ -1,11 +1,11 @@
-//Taken from "Clean Code" by Robert C. Martin
+package functions;//Taken from "Clean Code" by Robert C. Martin
 //Listing 3-2
 //HtmlUtil.java (refactored)
 
-import auxiliar.PageData;
-import auxiliar.WikiPage;
+import functions.auxiliar.PageData;
+import functions.auxiliar.WikiPage;
 
-public class FunctionsHTMLUtilsRefactoredA {
+public class HtmlUtilRefactoredA {
     public static String renderPageWithSetupsAndTeardowns(
             PageData pageData, boolean isSuite
     ) throws Exception {

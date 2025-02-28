@@ -1,4 +1,4 @@
-package auxiliar;
+package functions.auxiliar;
 
 public class PageData {
     public boolean hasAttribute(String test) {

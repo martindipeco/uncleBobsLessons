@@ -1,10 +1,10 @@
-//Taken from "Clean Code" by Robert C. Martin
+package functions;//Taken from "Clean Code" by Robert C. Martin
 //Listing 3-1
 //HtmlUtil.java (FitNesse 20070619)
 
-import auxiliar.*;
+import functions.auxiliar.*;
 
-public class FunctionsHTMLUtilsOriginal {
+public class HtmlUtil {
     public static String testableHtml(PageData pageData, boolean includeSuiteSetup) throws Exception {
         WikiPage wikiPage = pageData.getWikiPage();
         StringBuffer buffer = new StringBuffer();

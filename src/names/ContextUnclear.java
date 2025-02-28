@@ -1,4 +1,6 @@
-public class NamesContextUnclear {
+package names;
+
+public class ContextUnclear {
 
     // function that shows how many times a given char appears
     // receives given char and char count

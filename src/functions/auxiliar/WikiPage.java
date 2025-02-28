@@ -1,4 +1,4 @@
-package auxiliar;
+package functions.auxiliar;
 
 public class WikiPage {
     public PageCrawler getPageCrawler() {
