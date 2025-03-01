@@ -1,4 +1,4 @@
-package functions.auxiliar;
+package functions.fitnesse.auxiliar;
 
 public class PageCrawler {
     public WikiPagePath getFullPath(WikiPage page) {

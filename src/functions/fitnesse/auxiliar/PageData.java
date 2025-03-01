@@ -1,4 +1,4 @@
-package functions.auxiliar;
+package functions.fitnesse.auxiliar;
 
 public class PageData {
     public boolean hasAttribute(String test) {

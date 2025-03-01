@@ -1,9 +1,9 @@
-package functions;//Taken from "Clean Code" by Robert C. Martin
+package functions.fitnesse;//Taken from "Clean Code" by Robert C. Martin
 //Listing 3-2
 //HtmlUtil.java (refactored)
 
-import functions.auxiliar.PageData;
-import functions.auxiliar.WikiPage;
+import functions.fitnesse.auxiliar.PageData;
+import functions.fitnesse.auxiliar.WikiPage;
 
 public class HtmlUtilRefactoredA {
     public static String renderPageWithSetupsAndTeardowns(

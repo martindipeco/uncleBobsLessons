@@ -1,12 +1,12 @@
 //Taken from "Clean Code" by Robert C. Martin
 //Listing 3-7
 
-package functions; //originalmente: package fitnesse.html;
+package functions.fitnesse; //originalmente: package fitnesse.html;
 
 //import fitnesse.responders.run.SuiteResponder;
 //import fitnesse.wiki.*;
 
-import functions.auxiliar.*;
+import functions.fitnesse.auxiliar.*;
 
 public class SetupTeardownIncluder {
     private PageData pageData;

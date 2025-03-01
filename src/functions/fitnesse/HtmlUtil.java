@@ -1,8 +1,8 @@
-package functions;//Taken from "Clean Code" by Robert C. Martin
+package functions.fitnesse;//Taken from "Clean Code" by Robert C. Martin
 //Listing 3-1
 //HtmlUtil.java (FitNesse 20070619)
 
-import functions.auxiliar.*;
+import functions.fitnesse.auxiliar.*;
 
 public class HtmlUtil {
     public static String testableHtml(PageData pageData, boolean includeSuiteSetup) throws Exception {
