@@ -1,3 +1,5 @@
+import functions.sideeffects.UserValidatorNoSideEffects;
+import functions.sideeffects.auxiliar.Session;
 import names.ContextClear;
 import names.ContextUnclear;
 
@@ -19,5 +21,10 @@ public class Main {
         count = 1;
         message = namesContextClear.getMessage(candidate, count);
         System.out.println(message);
+
+        UserValidatorNoSideEffects userValidatorNoSideEffects = new UserValidatorNoSideEffects();
+        if (userValidatorNoSideEffects.checkPassword("user", "pass")) {
+            Session.initialize();
+        }
     }
 }
