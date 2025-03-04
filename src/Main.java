@@ -1,3 +1,4 @@
+import functions.separation.CommandQuerySeparation;
 import functions.sideeffects.UserValidatorNoSideEffects;
 import functions.sideeffects.auxiliar.Session;
 import names.ContextClear;
@@ -25,6 +26,11 @@ public class Main {
         UserValidatorNoSideEffects userValidatorNoSideEffects = new UserValidatorNoSideEffects();
         if (userValidatorNoSideEffects.checkPassword("user", "pass")) {
             Session.initialize();
+        }
+
+        CommandQuerySeparation commandQuerySeparation = new CommandQuerySeparation();
+        if (commandQuerySeparation.attributeExists("username")) {
+            commandQuerySeparation.setAttribute("username", "unclebob");
         }
     }
 }
