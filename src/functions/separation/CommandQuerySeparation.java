@@ -8,9 +8,8 @@ public class CommandQuerySeparation {
         return false;
     }
     //Should be avoided. leads to odd statements like "if (set("username", "unclebob"))..."
-    //What does it mean? Is it asking whether
-    //the “username” attribute was previously set to “unclebob”? Or is it asking whether the
-    //“username” attribute was successfully set to “unclebob”?
+    //Is it asking whethe the “username” attribute was previously set to “unclebob”?
+    //Or is it asking whether the “username” attribute was successfully set to “unclebob”?
 
     //RIGHT WAY:
     public boolean attributeExists(String username) {
@@ -22,7 +21,7 @@ public class CommandQuerySeparation {
 
     }
 
-    //instanciar Clase desde main e invocar metodos
+    //+ instanciar Clase desde main e invocar metodos
     //if (instanciaDeClase.attributeExists("username")) {
     //instanciaDeClase.setAttribute("username", "unclebob");
     //...
