@@ -8,7 +8,7 @@ public class CommandQuerySeparation {
         return false;
     }
     //Should be avoided. leads to odd statements like "if (set("username", "unclebob"))..."
-    //Is it asking whethe the “username” attribute was previously set to “unclebob”?
+    //Is it asking whether the “username” attribute was previously set to “unclebob”?
     //Or is it asking whether the “username” attribute was successfully set to “unclebob”?
 
     //RIGHT WAY:
