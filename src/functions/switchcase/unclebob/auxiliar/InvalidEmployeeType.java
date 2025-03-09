@@ -1,4 +1,4 @@
-package functions.switchcase.auxiliar;
+package functions.switchcase.unclebob.auxiliar;
 
 public class InvalidEmployeeType extends Exception {
     public InvalidEmployeeType(EmployeeType type) {

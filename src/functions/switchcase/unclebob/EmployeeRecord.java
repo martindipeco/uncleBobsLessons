@@ -1,6 +1,6 @@
-package functions.switchcase;
+package functions.switchcase.unclebob;
 
-import functions.switchcase.auxiliar.EmployeeType;
+import functions.switchcase.unclebob.auxiliar.EmployeeType;
 
 public class EmployeeRecord {
     // The type of employee (used in the factory switch statement)

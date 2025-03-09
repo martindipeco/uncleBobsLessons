@@ -1,8 +1,8 @@
-package functions.switchcase;
+package functions.switchcase.unclebob;
 
-import functions.switchcase.auxiliar.Employee;
-import functions.switchcase.auxiliar.InvalidEmployeeType;
-import functions.switchcase.auxiliar.Money;
+import functions.switchcase.unclebob.auxiliar.Employee;
+import functions.switchcase.unclebob.auxiliar.InvalidEmployeeType;
+import functions.switchcase.unclebob.auxiliar.Money;
 
 public class Payroll {
 

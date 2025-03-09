@@ -1,4 +1,4 @@
-package functions.switchcase.auxiliar;
+package functions.switchcase.unclebob.auxiliar;
 
 public enum EmployeeType {
     COMMISSIONED,

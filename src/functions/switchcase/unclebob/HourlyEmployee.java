@@ -1,6 +1,6 @@
-package functions.switchcase;
+package functions.switchcase.unclebob;
 
-import functions.switchcase.auxiliar.Money;
+import functions.switchcase.unclebob.auxiliar.Money;
 
 public class HourlyEmployee extends Employee {
     public HourlyEmployee(EmployeeRecord r) {

@@ -1,6 +1,6 @@
-package functions.switchcase;
+package functions.switchcase.unclebob;
 
-import functions.switchcase.auxiliar.InvalidEmployeeType;
+import functions.switchcase.unclebob.auxiliar.InvalidEmployeeType;
 
 public class EmployeeFactoryImpl implements EmployeeFactory{
     @Override
