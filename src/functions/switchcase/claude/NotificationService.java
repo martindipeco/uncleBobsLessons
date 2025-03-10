@@ -15,9 +15,15 @@ public class NotificationService {
             case PUSH:
                 sendPushNotification(message);
                 break;
+            case NEW:
+                sendNewNotification(message);
             default:
                 throw new InvalidNotificationTypeException(message.getType());
         }
+    }
+
+    private void sendNewNotification(Message message) {
+
     }
 
     private void sendEmailNotification(Message message) {

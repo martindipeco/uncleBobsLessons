@@ -4,16 +4,18 @@ import functions.switchcase.claude.auxiliar.InvalidNotificationTypeException;
 
 public class NotificationFactoryImpl implements NotificationFactory{
     @Override
-    public Notification makeNotification(NotificationRecord notificationRecord) throws InvalidNotificationTypeException {
-        switch (notificationRecord.notificationType) {
+    public Notification makeNotification(NotificationType notificationType) throws InvalidNotificationTypeException {
+        switch (notificationType) {
             case EMAIL:
-                return new EmailNotification();
+                return new EmailNotification(notificationType);
             case SMS:
-                return new SmsNotification();
+                return new SmsNotification(notificationType);
             case PUSH:
-                return new PushNotification();
+                return new PushNotification(notificationType);
+            case NEW:
+                return new NewNotification(notificationType);
             default:
-                throw new InvalidNotificationTypeException(notificationRecord.notificationType);
+                throw new InvalidNotificationTypeException(notificationType);
         }
     }
 }

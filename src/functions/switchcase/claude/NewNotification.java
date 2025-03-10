@@ -1,7 +1,7 @@
 package functions.switchcase.claude;
 
-public class SmsNotification extends Notification {
-    public SmsNotification(NotificationType notificationType) {
+public class NewNotification extends Notification {
+    public NewNotification(NotificationType notificationType) {
         super(notificationType);
     }
 
