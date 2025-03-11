@@ -9,6 +9,8 @@ public class SwitchDiscountCalculator {
                 return product.getPrice() * 0.20;
             case GROCERIES:
                 return product.getPrice() * 0.05;
+            case SPORTS:
+                return product.getPrice() * 0.40;
             default:
                 throw new IllegalArgumentException("Unknown category: " + product.getCategory());
         }

@@ -1,6 +1,9 @@
 import functions.separation.CommandQuerySeparation;
 import functions.sideeffects.UserValidatorNoSideEffects;
 import functions.sideeffects.auxiliar.Session;
+import functions.switchcase.chatgpt.Product;
+import functions.switchcase.chatgpt.ProductCategory;
+import functions.switchcase.chatgpt.SwitchDiscountCalculator;
 import functions.switchcase.claude.NotificationFactoryImpl;
 import functions.switchcase.claude.NotificationService;
 import functions.switchcase.claude.NotificationType;
@@ -45,6 +48,11 @@ public class Main {
 //        NotificationService notificationService = new NotificationService();
 //        Message message = new Message(NotificationType.SMS, "Hola, te llegó un SMS");
 //        notificationService.sendNotification(message);
+
+        SwitchDiscountCalculator switchDiscountCalculator = new SwitchDiscountCalculator();
+        double discount = switchDiscountCalculator.calculateDiscount(new Product(ProductCategory.ELECTRONICS, 70));
+
+        double finalPrice = new Product(ProductCategory.ELECTRONICS, 70).getFinalPrice();
 
     }
 }
