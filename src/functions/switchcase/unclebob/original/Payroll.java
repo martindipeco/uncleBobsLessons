@@ -1,4 +1,4 @@
-package functions.switchcase.unclebob;
+package functions.switchcase.unclebob.original;
 
 import functions.switchcase.unclebob.auxiliar.Employee;
 import functions.switchcase.unclebob.auxiliar.InvalidEmployeeType;

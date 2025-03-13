@@ -1,9 +1,9 @@
-package functions.switchcase.unclebob;
+package functions.switchcase.unclebob.bobsolution;
 
 import functions.switchcase.unclebob.auxiliar.Money;
 
-public class HourlyEmployee extends Employee {
-    public HourlyEmployee(EmployeeRecord r) {
+public class CommissionedEmployee extends Employee {
+    public CommissionedEmployee(EmployeeRecord r) {
         super();
     }
 
