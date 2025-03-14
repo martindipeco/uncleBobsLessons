@@ -1,4 +1,4 @@
-package functions.switchcase.claude;
+package functions.switchcase.claude.claudesolution;
 
 import functions.switchcase.claude.auxiliar.InvalidNotificationTypeException;
 

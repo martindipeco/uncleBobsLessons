@@ -1,6 +1,6 @@
 package functions.switchcase.claude.auxiliar;
 
-import functions.switchcase.claude.NotificationType;
+import functions.switchcase.claude.claudesolution.NotificationType;
 
 public class Message {
 

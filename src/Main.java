@@ -1,58 +1,21 @@
-import functions.separation.CommandQuerySeparation;
-import functions.sideeffects.UserValidatorNoSideEffects;
-import functions.sideeffects.auxiliar.Session;
 import functions.switchcase.chatgpt.Product;
 import functions.switchcase.chatgpt.ProductCategory;
 import functions.switchcase.chatgpt.SwitchDiscountCalculator;
-import functions.switchcase.claude.NotificationFactoryImpl;
-import functions.switchcase.claude.NotificationService;
-import functions.switchcase.claude.NotificationType;
 import functions.switchcase.claude.auxiliar.InvalidNotificationTypeException;
 import functions.switchcase.claude.auxiliar.Message;
-import names.ContextClear;
-import names.ContextUnclear;
+import functions.switchcase.claude.claudesolution.NotificationType;
+import functions.switchcase.claude.mysolution.InvalidTypeNotificationExeption;
+import functions.switchcase.claude.mysolution.NotificationFactoryImpl;
+import functions.switchcase.claude.original.NotificationService;
 
 public class Main {
-    public static void main(String[] args) throws InvalidNotificationTypeException {
+    public static void main(String[] args) throws InvalidNotificationTypeException, InvalidTypeNotificationExeption {
         System.out.println("welcome to MDP`s Uncle Bob Lessons");
 
-//        ContextUnclear.printGuessStatistics('A', 3);
+        NotificationService notificationService = new NotificationService();
+        notificationService.sendNotification(new Message(NotificationType.EMAIL, "This is an email"));
 
-//        ContextClear namesContextClear = new ContextClear();
-//        char candidate = 'A';
-//        int count = 3;
-//        String message = namesContextClear.getMessage(candidate, count);
-//        System.out.println(message);
-
-//        count = 0;
-//        message = namesContextClear.getMessage(candidate, count);
-//        System.out.println(message);
-
-//        count = 1;
-//        message = namesContextClear.getMessage(candidate, count);
-//        System.out.println(message);
-
-//        UserValidatorNoSideEffects userValidatorNoSideEffects = new UserValidatorNoSideEffects();
-//        if (userValidatorNoSideEffects.checkPassword("user", "pass")) {
-//            Session.initialize();
-//        }
-
-//        CommandQuerySeparation commandQuerySeparation = new CommandQuerySeparation();
-//        if (commandQuerySeparation.attributeExists("username")) {
-//            commandQuerySeparation.setAttribute("username", "unclebob");
-//        }
-
-//        NotificationFactoryImpl notificationFactory = new NotificationFactoryImpl();
-//        notificationFactory.makeNotification(NotificationType.EMAIL).send();
-//
-//        NotificationService notificationService = new NotificationService();
-//        Message message = new Message(NotificationType.SMS, "Hola, te llegó un SMS");
-//        notificationService.sendNotification(message);
-
-        SwitchDiscountCalculator switchDiscountCalculator = new SwitchDiscountCalculator();
-        double discount = switchDiscountCalculator.calculateDiscount(new Product(ProductCategory.ELECTRONICS, 70));
-
-        double finalPrice = new Product(ProductCategory.ELECTRONICS, 70).getFinalPrice();
-
+        NotificationFactoryImpl notificationFactory = new NotificationFactoryImpl();
+        notificationFactory.createNotification(functions.switchcase.claude.mysolution.NotificationType.EMAIL);
     }
 }

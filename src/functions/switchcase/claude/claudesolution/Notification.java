@@ -1,4 +1,4 @@
-package functions.switchcase.claude;
+package functions.switchcase.claude.claudesolution;
 
 public abstract class Notification {
     protected NotificationType notificationType;

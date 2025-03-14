@@ -1,4 +1,4 @@
-package functions.switchcase.claude;
+package functions.switchcase.claude.original;
 
 import functions.switchcase.claude.auxiliar.InvalidNotificationTypeException;
 import functions.switchcase.claude.auxiliar.Message;
@@ -23,7 +23,6 @@ public class NotificationService {
     }
 
     private void sendNewNotification(Message message) {
-
     }
 
     private void sendEmailNotification(Message message) {

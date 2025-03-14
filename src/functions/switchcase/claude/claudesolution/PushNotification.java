@@ -1,7 +1,7 @@
-package functions.switchcase.claude;
+package functions.switchcase.claude.claudesolution;
 
-public class EmailNotification extends Notification {
-    public EmailNotification(NotificationType notificationType) {
+public class PushNotification extends Notification {
+    public PushNotification(NotificationType notificationType) {
         super(notificationType);
     }
 
