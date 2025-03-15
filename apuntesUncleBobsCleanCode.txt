@@ -1,0 +1,50 @@
+criticas a la función original pp 63:
+
+código duplicado
+strings "raras"
+tipos de datos y APIs no reconocibles a simple vista 
+
+------------------------------------
+
+chap 3: functions (p 36 del libro)
+TO + nombre de la función como verbo + descripción de lo que hace la función, con un solo nivel de abstracción por debajo
+
+high level: getHtml();
+mid level: String pagePathName = PathParser.render(pagePath);
+low level: .append("\n");
+
+TO viene del Logo, como el "def" de Python
+
+StepDown rule: regla "rodó escaleras abajo"
+
+debe haber una narrativa en la lectura de las funciones, con un escalón (y solo un escalón) descendiente en cada nueva función, que coincide con la indentación, y que gráficamente forma una escalera
+
+--
+  |
+   --
+     |
+      --
+
+---------------------------------------------
+
+switch case (p.37). to be avoided and replaced with interface + polymorphism 
+
+1) créate Enum / Record
+2) Abstract class Object
+3) Concrete class Object1, Object2, Object3, etc
+4) Exception InvalidTypeException
+5) Inteface ObjectFactory throws InvalidTypeException
+6) Class ObjectFactoryImpl
+
+abstract factory -> used for creating objects that hide their implementation and handle their own logic, and not to determine behavior
+
+------------------------
+
+
+(have no) side effects (p 44). functions must do 1 thing. they should do it only. they should do it well.
+
+
+command query separation (p 45) functions should either do something or answer something, not both
+
+(prefer) exceptions to returning error codes (p 46) use try / catch blocks. (which are already a function)
+
