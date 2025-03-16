@@ -8,6 +8,7 @@ import functions.sideeffects.auxiliar.Session;
 import functions.sideeffects.auxiliar.User;
 import functions.sideeffects.auxiliar.UserGateway;
 
+//initializes session as a side effect
 public class UserValidator {
     private Cryptographer cryptographer;
     public boolean checkPassword(String userName, String password) {
@@ -16,7 +17,7 @@ public class UserValidator {
             String codedPhrase = user.getPhraseEncodedByPassword();
             String phrase = cryptographer.decrypt(codedPhrase, password);
             if ("Valid Password".equals(phrase)) {
-                Session.initialize(); //SIDE EFFECT
+                Session.initialize();
                 return true;
             }
         }

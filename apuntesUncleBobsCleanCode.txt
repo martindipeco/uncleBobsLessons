@@ -43,6 +43,15 @@ abstract factory -> used for creating objects that hide their implementation and
 
 (have no) side effects (p 44). functions must do 1 thing. they should do it only. they should do it well.
 
+function userValidator() validates user AND initializes sesión
+
+    //iniciar sesión desde main
+    //        UserValidatorNoSideEffects userValidatorNoSideEffects = new UserValidatorNoSideEffects();
+    //        if (userValidatorNoSideEffects.checkPassword("user", "pass")) {
+    //            Session.initialize();
+    //        }
+
+---------------------------
 
 command query separation (p 45) functions should either do something or answer something, not both
 

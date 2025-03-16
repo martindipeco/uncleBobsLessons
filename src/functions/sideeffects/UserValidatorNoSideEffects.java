@@ -19,9 +19,12 @@ public class UserValidatorNoSideEffects {
         return false;
     }
 
-    //iniciar sesión desde main
-    //        UserValidatorNoSideEffects userValidatorNoSideEffects = new UserValidatorNoSideEffects();
-    //        if (userValidatorNoSideEffects.checkPassword("user", "pass")) {
-    //            Session.initialize();
-    //        }
+    public void initializeSession(User user) {
+        if(checkPassword("username", "pass")){
+            Session.initialize();
+        }
+        else {
+            System.out.println("Check username and/or password");
+        }
+    }
 }

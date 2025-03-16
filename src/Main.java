@@ -13,6 +13,12 @@ public class Main {
     public static void main(String[] args) throws InvalidNotificationTypeException, InvalidTypeNotificationExeption {
         System.out.println("welcome to MDP`s Uncle Bob Lessons");
 
+        //iniciar sesión desde main
+        //        UserValidatorNoSideEffects userValidatorNoSideEffects = new UserValidatorNoSideEffects();
+        //        if (userValidatorNoSideEffects.checkPassword("user", "pass")) {
+        //            Session.initialize();
+        //        }
+
 
     }
 }
