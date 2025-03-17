@@ -1,7 +1,9 @@
 package functions.exceptions.auxiliar;
 
 public class Registro {
-    public void deleteReference(Page.Name pageName){
+    private Page page;
 
+    public ErrorEnum deleteReference(Page.Name pageName){
+        return ErrorEnum.E_OK;
     }
 }

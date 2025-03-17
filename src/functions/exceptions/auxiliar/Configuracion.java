@@ -1,7 +1,7 @@
 package functions.exceptions.auxiliar;
 
 public class Configuracion {
-    public void deleteKey(String key){
-
+    public ErrorEnum deleteKey(String key){
+        return ErrorEnum.E_OK;
     }
 }

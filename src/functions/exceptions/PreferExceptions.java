@@ -1,7 +1,7 @@
 package functions.exceptions;
 
-//if you use exceptions instead of returned error codes, then the error
-//processing code can be separated from the happy path code and can be simplified
+//if you use exceptions instead of returned error codes,
+// the error processing code can be separated from the happy path code and can be simplified
 
 import functions.exceptions.auxiliar.Configuracion;
 import functions.exceptions.auxiliar.Diario;
