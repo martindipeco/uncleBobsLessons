@@ -3,49 +3,32 @@ package functions.exceptions;
 //if you use exceptions instead of returned error codes,
 // the error processing code can be separated from the happy path code and can be simplified
 
-import functions.exceptions.auxiliar.Configuracion;
-import functions.exceptions.auxiliar.Diario;
-import functions.exceptions.auxiliar.Page;
-import functions.exceptions.auxiliar.Registro;
+import functions.exceptions.auxiliar.*;
 
 import java.lang.module.Configuration;
 
+import static functions.exceptions.auxiliar.ErrorEnum.E_ERROR;
+import static functions.exceptions.auxiliar.ErrorEnum.E_OK;
+
 public class PreferExceptions {
-//    try {
-//        deletePage(page);
-//        registry.deleteReference(page.name);
-//        configKeys.deleteKey(page.name.makeKey());
-//    }
-//    catch (Exception e) {
-//            logger.log(e.getMessage());
+    //added atributes not present in original function
+    private Page page;
+    private Registro registry;
+    private Configuracion configKeys;
+    private Diario logger;
 
-    // try catch blocks confuse the structure of the code and
-    //mix error processing with normal processing. So it is better to extract the bodies of the try
-    //and catch blocks out into functions of their own.
-
-    Registro registry = new Registro();
-    Configuracion configKeys = new Configuracion();
-    Diario logger = new Diario();
-
-    public void delete(Page page) {
+    public void betterTryCatch() {
         try {
-            deletePageAndAllReferences(page);
+            deletePage(page);
+            registry.deleteReference(page.name);
+            configKeys.deleteKey(page.name.makeKey());
         }
         catch (Exception e) {
-            logError(e);
+            logger.log(e.getMessage());
         }
     }
-    private void deletePageAndAllReferences(Page page) throws Exception {
-        deletePage(page);
-        registry.deleteReference(page.name);
-        configKeys.deleteKey(page.name.makeKey());
-    }
 
+    //added function not present in original script
     private void deletePage(Page page) {
     }
-
-    private void logError(Exception e) {
-        logger.log(e.getMessage());
-    }
-
 }
