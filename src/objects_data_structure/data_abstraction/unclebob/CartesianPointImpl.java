@@ -1,4 +1,4 @@
-package objects_data_structure.data_abstraction;
+package objects_data_structure.data_abstraction.unclebob;
 
 public class CartesianPointImpl implements AbstractPoint{
     private double x;

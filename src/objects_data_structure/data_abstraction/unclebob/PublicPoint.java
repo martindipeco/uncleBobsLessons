@@ -1,4 +1,4 @@
-package objects_data_structure.data_abstraction;
+package objects_data_structure.data_abstraction.unclebob;
 
 public class PublicPoint {
     public double x;

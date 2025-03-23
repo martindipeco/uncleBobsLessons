@@ -2,7 +2,7 @@
 //Abstract Point
 //p. 94
 
-package objects_data_structure.data_abstraction;
+package objects_data_structure.data_abstraction.unclebob;
 
 //in interfaces all methods are implicitly public
 public interface AbstractPoint {
