@@ -96,4 +96,38 @@ example: concrete point vs abstract point
 
 contract forces you to define the point unmistakably (defining either x and y or r and theta altogether, so you don`t get orphaned points, i.e: x without y)
 
+possible pattern for hiding implementation (typical case of temperature celcius farenheit, distance miles km, etc)
 
+public interface AbstractSomething {
+	double getAAtribute();
+	double getBAtribute();
+}
+
+public class SomethingFactory {
+	public static AbstractSomething fromAtrA(double a) {
+		return new ThingA(a);
+	}
+
+	//same with other atributes
+}
+
+//check (absence of explicit) Access modifiers
+class ThingA implements AbstractSomething {
+	private double a;
+
+	ThingA(double atr) {
+		this.a = atr;
+	}
+
+	@Override
+	public double getA() {
+		return a;
+	}
+
+	@Override
+	public double getB() {
+		return b infered from a;
+	}
+}
+
+-------------------------------------------------------

@@ -1,9 +1,10 @@
 package objects_data_structure.data_abstraction.distance;
 
-public class DistanceKM implements AbstractDistance{
+//package private. Can only be instantiated via DistanceFactory
+class DistanceKM implements AbstractDistance{
     private double km;
 
-    public DistanceKM(double distance) {
+    DistanceKM(double distance) {
         this.km = distance;
     }
 
