@@ -3,11 +3,11 @@ package objects_data_structure.data_abstraction.claudefactory;
 public class TemperatureImpl implements AbstractTemperatureFactory{
     private final double celsius; //could be either farenheit or kelvin
 
-    TemperatureImpl(double celsius) {
-        if (celsius < -273.15) {
+    TemperatureImpl(double temperature) {
+        if (temperature < -273.15) {
             throw new IllegalArgumentException("Temperature cannot be below absolute zero (-273.15°C)");
         }
-        this.celsius = celsius;
+        this.celsius = temperature;
     }
 
     @Override
