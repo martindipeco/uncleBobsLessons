@@ -1,13 +1,27 @@
 package objects_data_structure.train_wreck.auxiliar;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 
 public class Context {
-    private Option option = new Option();
-    private List<Option> options = new ArrayList<>()
+    private Options options;
 
-    public List<Option> getOptions() {
+    public Context() {
+        options = new Options();
+    }
+
+    public Options getOptions() {
         return options;
+    }
+
+    public BufferedOutputStream createScratchFileStream(String fileName) {
+        try {
+            File scratchFile = new File(options.getScratchDir(), fileName);
+            return new BufferedOutputStream(new FileOutputStream(scratchFile));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException("Could not create scratch file: " + fileName, e);
+        }
     }
 }
