@@ -1,7 +1,7 @@
-package error_handling.tests;
+package error_handling.tests.unclebob;
 
-import error_handling.tests.auxiliar.SectionStoreTryCatchFinally;
-import error_handling.tests.auxiliar.StorageException;
+import error_handling.tests.unclebob.auxiliar.SectionStoreTryCatchFinally;
+import error_handling.tests.unclebob.auxiliar.StorageException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

@@ -1,4 +1,4 @@
-package error_handling.tests.auxiliar;
+package error_handling.tests.unclebob.auxiliar;
 
 import java.util.ArrayList;
 import java.util.List;
