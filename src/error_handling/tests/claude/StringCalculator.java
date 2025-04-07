@@ -1,20 +1,28 @@
 package error_handling.tests.claude;
 
 public class StringCalculator {
-    //can take several strings separated by a commma
-    public int add(String numbers) {
+    //string passed as argument can contain several commma separated numbers
+    public int add(String numbers) throws StringCalculatorException {
         if(numbers.isEmpty()) {
             return 0;
-        }
-        if(numbers.contains(",")) {
+        } else if (numbers.contains(",")) {
             String[] numberArray = numbers.split(",");
-            int sum = 0;
+            return tryToAddStrings(numberArray);
+        } else {
+            String[] numberArray = new String[] {numbers};
+            return tryToAddStrings(numberArray);
+        }
+    }
+
+    public int tryToAddStrings(String[] numberArray) throws StringCalculatorException {
+        int sum = 0;
+        try {
             for(String number : numberArray) {
                 sum += Integer.parseInt(number);
             }
-            return sum;
-        } else {
-            return Integer.parseInt(numbers);
+        } catch (NumberFormatException e) {
+            throw new StringCalculatorException(e);
         }
+        return sum;
     }
 }
