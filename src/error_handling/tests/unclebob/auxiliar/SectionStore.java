@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SectionStore {
-    public List<RecordedGrip> retrieveSection(String sectionName) throws StorageException {
+    public List<RecordedGrip> retrieveSection(String sectionName)  {
         try {
             FileInputStream stream = new FileInputStream(sectionName);
             stream.close();

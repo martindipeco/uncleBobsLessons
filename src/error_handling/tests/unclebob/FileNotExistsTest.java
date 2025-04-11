@@ -8,7 +8,7 @@ public class FileNotExistsTest {
     SectionStore sectionStore = new SectionStore();
 
     @Test(expected = StorageException.class)
-    public void retrieveSectionShouldThrowOnInvalidFileName() throws StorageException {
+    public void retrieveSectionShouldThrowOnInvalidFileName() {
         sectionStore.retrieveSection("Invalid - file");
     }
 }

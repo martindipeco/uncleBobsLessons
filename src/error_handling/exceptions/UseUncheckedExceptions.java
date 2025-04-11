@@ -10,7 +10,6 @@ public class UseUncheckedExceptions {
 
         //option 2
         useTryCatch(5);
-
     }
 
     public static void checkArrayBoundsBeforeAccessing(int index) {
