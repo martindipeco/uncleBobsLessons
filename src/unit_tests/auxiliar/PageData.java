@@ -8,8 +8,8 @@ public class PageData {
         return false;
     }
 
-    public WikiPage getWikiPage() {
-        return new WikiPage();
+    public Page getWikiPage() {
+        return new Page();
     }
 
     public char[] getContent() {

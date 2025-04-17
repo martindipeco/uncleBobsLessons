@@ -1,10 +1,12 @@
 package unit_tests.auxiliar;
 
 public class PageCrawler {
-    public WikiPagePath getFullPath(WikiPage page) {
-        // Return some WikiPagePath based on the given page
-        return new WikiPagePath();
+    public PagePath getFullPath(Page page) {
+        // Return some PagePath based on the given page
+        return new PagePath();
     }
 
-    public addPage
+    public void addPage(Page parent, PagePath path) {
+
+    }
 }
