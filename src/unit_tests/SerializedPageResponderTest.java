@@ -9,7 +9,7 @@ public class SerializedPageResponderTest {
     private Page root;
     private Request request;
 
-    public void testGetPageHieratchyAsXml() throws Exception {
+    public void testGetPageHierarchyAsXml() throws Exception {
         crawler.addPage(root, PathParser.parse("PageOne"));
         crawler.addPage(root, PathParser.parse("PageOne.ChildOne"));
         crawler.addPage(root, PathParser.parse("PageTwo"));
@@ -24,6 +24,18 @@ public class SerializedPageResponderTest {
         assertSubstring("<name>PageOne</name>", xml);
         assertSubstring("<name>PageTwo</name>", xml);
         assertSubstring("<name>ChildOne</name>", xml);
+    }
+
+    public void testGetPageHierarchyAsXmlDoesntContainSymbolicLinks() throws Exception {
+        WikiPage pageOne = crawler.addPage(root, PathParser.parse("PageOne"));
+        crawler.addPage(root, PathParser.parse("PageOne.ChildOne"));
+        crawler.addPage(root, PathParser.parse("PageTwo"));
+
+        PageData data = pageOne.getData();
+        WikiPageProperties properties = data.getProperties();
+        WikiPageProperties symLinks = properties.set(SymbolicPage.PROPERTY_NAME);
+        symLinks.set("SymPage", "PageTwo");
+        pageOne.commit(data);
     }
 
     private void assertSubstring(String s, String xml) {

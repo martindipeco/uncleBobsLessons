@@ -6,7 +6,7 @@ public class PageCrawler {
         return new PagePath();
     }
 
-    public void addPage(Page parent, PagePath path) {
-
+    public WikiPage addPage(Page page, PagePath path) {
+        return new WikiPage();
     }
 }

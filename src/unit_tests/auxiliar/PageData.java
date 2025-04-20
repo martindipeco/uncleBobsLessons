@@ -22,4 +22,8 @@ public class PageData {
     public String getHtml() {
         return "Htlml";
     }
+
+    public WikiPageProperties getProperties() {
+        return new WikiPageProperties();
+    }
 }
