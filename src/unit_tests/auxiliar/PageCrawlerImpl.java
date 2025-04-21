@@ -8,4 +8,5 @@ public class PageCrawlerImpl {
     public static Page getInheritedPage (String suiteResponder, Page page) {
         return new Page();
     }
+
 }

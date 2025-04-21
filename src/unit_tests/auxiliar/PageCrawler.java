@@ -9,4 +9,8 @@ public class PageCrawler {
     public WikiPage addPage(Page page, PagePath path) {
         return new WikiPage();
     }
+
+    public WikiPage addPage(Page page, PagePath path, String s) {
+        return new WikiPage();
+    }
 }
